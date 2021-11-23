@@ -138,42 +138,89 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
+ bool isItDaytime(bool light, int time = 0)
+ {
+   ignoreUnused(light, time);
+   return {};
+ }
 
 /*
  2)
  */
+ int hoursToGo(int time = 0, int timeOff = 12)
+ {
+   ignoreUnused(time, timeOff);
+   return {};
+ }
 
 /*
  3)
  */
+ char findFirstLetter(char name[], int position = 0)
+ {
+   ignoreUnused(name, position);
+   return {};
+ }
 
 /*
  4)
  */
+ float calculateArea(float height, float width)
+ {
+   ignoreUnused(height, width);
+ }
 
 /*
  5)
  */
+ void counter(int tick = 0)
+ {
+   ignoreUnused(tick);
+ }
 
 /*
  6)
  */
-
+int countingDown(int rotations = 100, int interval = 2)
+ {
+   ignoreUnused(rotations, interval);
+   return {};
+ }
 /*
  7)
  */
+ bool turnOnTimer(int passes = 0)
+ {
+   ignoreUnused(passes);
+   return {};
+ }
 
 /*
  8)
  */
+ float bouncesPerSecond (int delayInSeconds, float speed = 0.0f)
+ {
+   ignoreUnused(delayInSeconds, speed);
+   return {};
+ }
 
 /*
  9)
  */
+ bool shouldiStop(bool amITired, int howImportant = 0)
+ {
+   ignoreUnused(shouldiStop, howImportant);
+   return {};
+ }
 
 /*
  10)
  */
+ int timeUntilLaunch(int time, int counter = 0, int tick = -1)
+ {
+   ignoreUnused(time, counter, tick);
+   return {};
+ }
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
