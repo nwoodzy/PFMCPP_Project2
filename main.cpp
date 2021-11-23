@@ -97,7 +97,7 @@ void variableDeclarations()
     ignoreUnused(firstLetter);
 
     char display = '1';
-    ignoreUnused(name);
+    ignoreUnused(display);
 
     char lastLetter = 'x';
     ignoreUnused(lastLetter);
@@ -139,9 +139,9 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  1)
  */
  bool isItDaytime(bool light, int time = 0)
- {
-   ignoreUnused(light, time);
-   return {};
+ { 
+      ignoreUnused(light, time);
+      return {};
  }
 
 /*
@@ -149,17 +149,17 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
  int hoursToGo(int time = 0, int timeOff = 12)
  {
-   ignoreUnused(time, timeOff);
-   return {};
+      ignoreUnused(time, timeOff);
+      return {};
  }
 
 /*
  3)
  */
- char findFirstLetter(char name[], int position = 0)
+ int letterPosition(char letter, int position = 0)
  {
-   ignoreUnused(name, position);
-   return {};
+      ignoreUnused(letter, position);
+      return {};
  }
 
 /*
@@ -167,7 +167,8 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
  float calculateArea(float height, float width)
  {
-   ignoreUnused(height, width);
+      ignoreUnused(height, width);
+      return {};
  }
 
 /*
@@ -175,7 +176,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
  void counter(int tick = 0)
  {
-   ignoreUnused(tick);
+      ignoreUnused(tick);
  }
 
 /*
@@ -183,16 +184,16 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
 int countingDown(int rotations = 100, int interval = 2)
  {
-   ignoreUnused(rotations, interval);
-   return {};
+      ignoreUnused(rotations, interval);
+      return {};
  }
 /*
  7)
  */
  bool turnOnTimer(int passes = 0)
  {
-   ignoreUnused(passes);
-   return {};
+      ignoreUnused(passes);
+      return {};
  }
 
 /*
@@ -200,17 +201,17 @@ int countingDown(int rotations = 100, int interval = 2)
  */
  float bouncesPerSecond (int delayInSeconds, float speed = 0.0f)
  {
-   ignoreUnused(delayInSeconds, speed);
-   return {};
+      ignoreUnused(delayInSeconds, speed);
+      return {};
  }
 
 /*
  9)
  */
- bool shouldiStop(bool amITired, int howImportant = 0)
+ bool shouldIStop(bool amITired, int howImportant = 0)
  {
-   ignoreUnused(shouldiStop, howImportant);
-   return {};
+      ignoreUnused(amITired, howImportant);
+      return {};
  }
 
 /*
@@ -218,8 +219,8 @@ int countingDown(int rotations = 100, int interval = 2)
  */
  int timeUntilLaunch(int time, int counter = 0, int tick = -1)
  {
-   ignoreUnused(time, counter, tick);
-   return {};
+      ignoreUnused(time, counter, tick);
+      return {};
  }
 
 /*
@@ -242,27 +243,38 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
+    auto timeOfDay = isItDaytime(true, 10);
     
     //2)
-    
+    auto hours = hoursToGo(10, 0);
     //3)
-    
+    auto firstLetter = letterPosition('d', 0);
     //4)
-    
+    auto area = calculateArea(3.52726f, 3.290885f);
     //5)
-    
+    counter(0);
     //6)
-    
+    auto count = countingDown(200, 22);
     //7)
-    
+    auto OnOrOff = turnOnTimer(10);
     //8)
-    
+    auto speed = bouncesPerSecond (10, 0.243f);
     //9)
-    
+    auto didIStop = shouldIStop(true, 10);
     //10)
-    
+    auto seconds = timeUntilLaunch(12, 100, -100);
     
     ignoreUnused(carRented);
+    ignoreUnused(timeOfDay);
+    ignoreUnused(hours);
+    ignoreUnused(firstLetter);
+    ignoreUnused(area);
+    ignoreUnused(count);
+    ignoreUnused(OnOrOff);
+    ignoreUnused(speed);
+    ignoreUnused(didIStop);
+    ignoreUnused(seconds);
+
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
