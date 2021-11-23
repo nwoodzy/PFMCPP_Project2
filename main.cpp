@@ -16,13 +16,12 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of the 6 major primitive types available in C++  here:
  
- 
- 
- 
- 
- 
- 
- 
+ int
+ bool
+ float
+ double
+ char
+ unsigned int
  
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
@@ -63,6 +62,66 @@ void variableDeclarations()
 
     
     ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+
+    int cupcakes = 1;
+    ignoreUnused(cupcakes);
+
+    int counter = -72;
+    ignoreUnused(counter);
+
+    int frogs = 11;
+    ignoreUnused(frogs);
+
+
+    bool isSmall = true;
+    ignoreUnused(isSmall);
+    
+    bool isOn = true;
+    ignoreUnused(isOn);
+
+    bool hasPassed = false;
+    ignoreUnused(hasPassed);
+
+
+    float seconds = 2.234f;
+    ignoreUnused(seconds);
+
+    float height = 7.4873f;
+    ignoreUnused(height);
+
+    float width = 72.47444f;
+    ignoreUnused(width);
+
+
+    char firstLetter = 'a';
+    ignoreUnused(firstLetter);
+
+    char display = '1';
+    ignoreUnused(name);
+
+    char lastLetter = 'x';
+    ignoreUnused(lastLetter);
+
+
+    unsigned int space = 8;
+    ignoreUnused(space);
+
+    unsigned int bits = 16;
+    ignoreUnused(bits);
+
+    unsigned int location = 164;
+    ignoreUnused(location);
+
+
+    double area = 4.1234567893;
+    ignoreUnused(area);
+
+    double diameter = 14.1874763883;
+    ignoreUnused(diameter);
+
+    double decibels = 8.468729845784;
+    ignoreUnused(decibels);
+
 }
 
 /*
