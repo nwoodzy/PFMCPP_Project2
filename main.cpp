@@ -113,90 +113,90 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
- bool isItDaytime(bool light = true, int time = 0)
- { 
+bool isItDaytime(bool light = true, int time = 0)
+{ 
     ignoreUnused(light, time);
     return {};
- }
+}
 
 /*
  2)
  */
- int hoursToGo(int time = 0, int timeOff = 12)
- {
+int hoursToGo(int time = 0, int timeOff = 12)
+{
     ignoreUnused(time, timeOff);
     return {};
- }
+}
 
 /*
  3)
  */
- int letterPosition(char letter, int position = 0)
- {
+int letterPosition(char letter, int position = 0)
+{
     ignoreUnused(letter, position);
     return {};
- }
+}
 
 /*
  4)
  */
- float calculateArea(float height, float width)
- {
+float calculateArea(float height, float width)
+{
     ignoreUnused(height, width);
     return {};
- }
+}
 
 /*
  5)
  */
- void counter(int tick = 0)
- {
+void counter(int tick = 0)
+{
     ignoreUnused(tick);
- }
+}
 
 /*
  6)
  */
 int countingDown(int rotations = 100, int interval = 2)
- {
+{
     ignoreUnused(rotations, interval);
     return {};
- }
+}
 /*
  7)
  */
- bool turnOnTimer(int passes = 0)
- {
+bool turnOnTimer(int passes = 0)
+{
     ignoreUnused(passes);
     return {};
- }
+}
 
 /*
  8)
  */
- float bouncesPerSecond (int delayInSeconds, float speed = 0.0f)
- {
+float bouncesPerSecond (int delayInSeconds, float speed = 0.0f)
+{
     ignoreUnused(delayInSeconds, speed);
     return {};
- }
+}
 
 /*
  9)
  */
- bool shouldIStop(bool amITired, int howImportant = 0)
- {
+bool shouldIStop(bool amITired, int howImportant = 0)
+{
     ignoreUnused(amITired, howImportant);
     return {};
- }
+}
 
 /*
  10)
  */
- int timeUntilLaunch(int time, int counter = 0, int tick = -1)
- {
+int timeUntilLaunch(int time, int counter = 0, int tick = -1)
+{
     ignoreUnused(time, counter, tick);
     return {};
- }
+}
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
