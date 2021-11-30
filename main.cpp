@@ -140,8 +140,8 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
  bool isItDaytime(bool light, int time = 0)
  { 
-      ignoreUnused(light, time);
-      return {};
+    ignoreUnused(light, time);
+    return {};
  }
 
 /*
@@ -149,8 +149,8 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
  int hoursToGo(int time = 0, int timeOff = 12)
  {
-      ignoreUnused(time, timeOff);
-      return {};
+    ignoreUnused(time, timeOff);
+    return {};
  }
 
 /*
@@ -158,8 +158,8 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
  int letterPosition(char letter, int position = 0)
  {
-      ignoreUnused(letter, position);
-      return {};
+    ignoreUnused(letter, position);
+    return {};
  }
 
 /*
@@ -167,8 +167,8 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
  float calculateArea(float height, float width)
  {
-      ignoreUnused(height, width);
-      return {};
+    ignoreUnused(height, width);
+    return {};
  }
 
 /*
@@ -176,7 +176,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
  void counter(int tick = 0)
  {
-      ignoreUnused(tick);
+    ignoreUnused(tick);
  }
 
 /*
@@ -184,16 +184,16 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
 int countingDown(int rotations = 100, int interval = 2)
  {
-      ignoreUnused(rotations, interval);
-      return {};
+    ignoreUnused(rotations, interval);
+    return {};
  }
 /*
  7)
  */
  bool turnOnTimer(int passes = 0)
  {
-      ignoreUnused(passes);
-      return {};
+    ignoreUnused(passes);
+    return {};
  }
 
 /*
@@ -201,8 +201,8 @@ int countingDown(int rotations = 100, int interval = 2)
  */
  float bouncesPerSecond (int delayInSeconds, float speed = 0.0f)
  {
-      ignoreUnused(delayInSeconds, speed);
-      return {};
+    ignoreUnused(delayInSeconds, speed);
+    return {};
  }
 
 /*
@@ -210,8 +210,8 @@ int countingDown(int rotations = 100, int interval = 2)
  */
  bool shouldIStop(bool amITired, int howImportant = 0)
  {
-      ignoreUnused(amITired, howImportant);
-      return {};
+    ignoreUnused(amITired, howImportant);
+    return {};
  }
 
 /*
@@ -219,8 +219,8 @@ int countingDown(int rotations = 100, int interval = 2)
  */
  int timeUntilLaunch(int time, int counter = 0, int tick = -1)
  {
-      ignoreUnused(time, counter, tick);
-      return {};
+    ignoreUnused(time, counter, tick);
+    return {};
  }
 
 /*
