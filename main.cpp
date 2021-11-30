@@ -16,13 +16,12 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of the 6 major primitive types available in C++  here:
  
- 
- 
- 
- 
- 
- 
- 
+ int
+ bool
+ float
+ double
+ char
+ unsigned int
  
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
@@ -60,9 +59,44 @@ void variableDeclarations()
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
     
+    int cupcakes = 1;
+ 
 
+    int counter = -72;
+
+    int frogs = 11;
+
+    bool isSmall = true;
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    bool isOn = true;
+
+    bool hasPassed = false;
+
+    float seconds = 2.234f;
+
+    float height = 7.4873f;
+
+    float width = 72.47444f;
+
+    char firstLetter = 'a';
+
+    char display = '1';
+
+    char lastLetter = 'x';
+
+    unsigned int space = 8;
+
+    unsigned int bits = 16;
+
+    unsigned int location = 164;
+
+    double area = 4.1234567893;
+
+    double diameter = 14.1874763883;
+
+    double decibels = 8.468729845784;
+
+    ignoreUnused(number, cupcakes, counter, frogs, isSmall, isOn, hasPassed, seconds, height, width, firstLetter, display, lastLetter, space, bits, location, area, diameter, decibels); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -79,42 +113,90 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
+bool isItDaytime(bool light = true, int time = 0)
+{ 
+    ignoreUnused(light, time);
+    return {};
+}
 
 /*
  2)
  */
+int hoursToGo(int time = 0, int timeOff = 12)
+{
+    ignoreUnused(time, timeOff);
+    return {};
+}
 
 /*
  3)
  */
+int letterPosition(char letter, int position = 0)
+{
+    ignoreUnused(letter, position);
+    return {};
+}
 
 /*
  4)
  */
+float calculateArea(float height, float width)
+{
+    ignoreUnused(height, width);
+    return {};
+}
 
 /*
  5)
  */
+void counter(int tick = 0)
+{
+    ignoreUnused(tick);
+}
 
 /*
  6)
  */
-
+int countingDown(int rotations = 100, int interval = 2)
+{
+    ignoreUnused(rotations, interval);
+    return {};
+}
 /*
  7)
  */
+bool turnOnTimer(int passes = 0)
+{
+    ignoreUnused(passes);
+    return {};
+}
 
 /*
  8)
  */
+float bouncesPerSecond (int delayInSeconds, float speed = 0.0f)
+{
+    ignoreUnused(delayInSeconds, speed);
+    return {};
+}
 
 /*
  9)
  */
+bool shouldIStop(bool amITired, int howImportant = 0)
+{
+    ignoreUnused(amITired, howImportant);
+    return {};
+}
 
 /*
  10)
  */
+int timeUntilLaunch(int time, int counter = 0, int tick = -1)
+{
+    ignoreUnused(time, counter, tick);
+    return {};
+}
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
@@ -136,27 +218,37 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
+    auto timeOfDay = isItDaytime(true, 10);
     
     //2)
-    
+    auto hours = hoursToGo(10, 0);
+
     //3)
-    
+    auto firstLetter = letterPosition('d', 0);
+
     //4)
-    
+    auto area = calculateArea(3.52726f, 3.290885f);
+
     //5)
-    
+    counter(0);
+
     //6)
-    
+    auto count = countingDown(200, 22);
+
     //7)
-    
+    auto onOrOff = turnOnTimer(10);
+
     //8)
-    
+    auto speed = bouncesPerSecond (10, 0.243f);
+
     //9)
-    
+    auto didIStop = shouldIStop(true, 10);
+
     //10)
+    auto seconds = timeUntilLaunch(12, 100, -100);
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, timeOfDay, hours, firstLetter, area, count, onOrOff, speed, didIStop, seconds);
+
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
