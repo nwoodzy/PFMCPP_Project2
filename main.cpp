@@ -59,69 +59,44 @@ void variableDeclarations()
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
     
-
-    
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
-
     int cupcakes = 1;
-    ignoreUnused(cupcakes);
+ 
 
     int counter = -72;
-    ignoreUnused(counter);
 
     int frogs = 11;
-    ignoreUnused(frogs);
-
 
     bool isSmall = true;
-    ignoreUnused(isSmall);
     
     bool isOn = true;
-    ignoreUnused(isOn);
 
     bool hasPassed = false;
-    ignoreUnused(hasPassed);
-
 
     float seconds = 2.234f;
-    ignoreUnused(seconds);
 
     float height = 7.4873f;
-    ignoreUnused(height);
 
     float width = 72.47444f;
-    ignoreUnused(width);
-
 
     char firstLetter = 'a';
-    ignoreUnused(firstLetter);
 
     char display = '1';
-    ignoreUnused(display);
 
     char lastLetter = 'x';
-    ignoreUnused(lastLetter);
-
 
     unsigned int space = 8;
-    ignoreUnused(space);
 
     unsigned int bits = 16;
-    ignoreUnused(bits);
 
     unsigned int location = 164;
-    ignoreUnused(location);
-
 
     double area = 4.1234567893;
-    ignoreUnused(area);
 
     double diameter = 14.1874763883;
-    ignoreUnused(diameter);
 
     double decibels = 8.468729845784;
-    ignoreUnused(decibels);
 
+    ignoreUnused(number, cupcakes, counter, frogs, isSmall, isOn, hasPassed, seconds, height, width, firstLetter, display, lastLetter, space, bits, location, area, diameter, decibels); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -138,7 +113,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
- bool isItDaytime(bool light, int time = 0)
+ bool isItDaytime(bool light = true, int time = 0)
  { 
     ignoreUnused(light, time);
     return {};
@@ -247,33 +222,32 @@ int main()
     
     //2)
     auto hours = hoursToGo(10, 0);
+
     //3)
     auto firstLetter = letterPosition('d', 0);
+
     //4)
     auto area = calculateArea(3.52726f, 3.290885f);
+
     //5)
     counter(0);
+
     //6)
     auto count = countingDown(200, 22);
+
     //7)
-    auto OnOrOff = turnOnTimer(10);
+    auto onOrOff = turnOnTimer(10);
+
     //8)
     auto speed = bouncesPerSecond (10, 0.243f);
+
     //9)
     auto didIStop = shouldIStop(true, 10);
+
     //10)
     auto seconds = timeUntilLaunch(12, 100, -100);
     
-    ignoreUnused(carRented);
-    ignoreUnused(timeOfDay);
-    ignoreUnused(hours);
-    ignoreUnused(firstLetter);
-    ignoreUnused(area);
-    ignoreUnused(count);
-    ignoreUnused(OnOrOff);
-    ignoreUnused(speed);
-    ignoreUnused(didIStop);
-    ignoreUnused(seconds);
+    ignoreUnused(carRented, timeOfDay, hours, firstLetter, area, count, onOrOff, speed, didIStop, seconds);
 
     std::cout << "good to go!" << std::endl;
     return 0;    
